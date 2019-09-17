@@ -11,7 +11,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="{% url 'blog-home' %}"><b>itSly news</b></a>
+        <a class="navbar-brand" href="{% url 'blog-home' %}"><b>AloveV18</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -24,9 +24,9 @@
             </form>
 
             {% if user.is_authenticated %}
-            <a href="{% url 'news-add' %}"><button class='btn btn-outline-success mr-2'>Add your ads</button></a>
-            <a href="{% url 'profile' %}"><button class='btn btn-outline-success mr-2'>Profile</button></a>
-            <a href="{% url 'exit' %}"><button class='btn btn-outline-success'>Logout</button></a>
+            <a href="{% url 'news-add' %}"><button class='btn btn-outline-success mr-2'>Добавить пост о любви</button></a>
+            <a href="{% url 'profile' %}"><button class='btn btn-outline-success mr-2'>Профиль</button></a>
+            <a href="{% url 'exit' %}"><button class='btn btn-outline-success'>Выйти как разбойник</button></a>
             {% else %}
             <a href="{% url 'reg' %}"><button class='btn btn-outline-success mr-2'>Registration</button></a>
             <a href="{% url 'user' %}"><button class='btn btn-outline-success'>Login</button></a>
@@ -46,21 +46,22 @@
                     {% block main_section %}
                     {% endblock main_section %}
              </div>
-             <aside class="col-md-4 mt-1 mb-5 p-5 ">
+             <aside class="col-md-4 mb-5 p-5 ">
+                 <h3>Самые важные даты</h3>
                  <div class="bg-info p-3 mb-3 rounded">
-                     <h3><b>What programming languages are needed for what?
+                     <h3><b>Нам 1 год
                      </b></h3>
-                     <p>If we talk about web-dev, i started from python, HTML and CSS. After 2-3 mounth i started learn Django. Now i learn JavaScript</p>
-                     <img src='https://im0-tub-ru.yandex.net/i?id=d0324df83e90cf5eed1b0f44dec548d7&n=13' width="200" height="150" class='rounded mb-3'><br>
+                     <p>Фотографии из этого 365-о дня у меня нету, но в скором будующем появится :3</p>
+                     <img src='https://sun9-43.userapi.com/c855336/v855336162/e0d8a/j0FpxGoDVFI.jpg' width="200" height="250" class='rounded mb-3'><br>
                      <a href="https://it-black.ru/kratkij-obzor-izvestnykh-yazykov-programmirovaniya/"><button type="button" class="btn btn-primary">Watch</button></a>
 
                  </div>
                  
                  <div class="bg-info p-3 mb-3 rounded">
-                    <h3><b>What about Angular.JS ?
+                    <h3><b>Нам пол года
                     </b></h3>
-                    <p>JavaScript framework is open source. Designed for single-page application development. Its goal is to extend browser-based applications based on the MVC template, as well as to simplify testing and development.</p>
-                    <img src='https://codegeekz.com/wp-content/uploads/angularjs.jpg' width="200" height="150" class='rounded mb-3'><br>
+                    <p>Те самые суши</p>
+                    <img src='https://sun9-52.userapi.com/c852228/v852228535/1c6ef1/gBt9YfVl1xk.jpg' width="200" height="150" class='rounded mb-3'><br>
                     <a href="https://angular.io/"><button type="button" class="btn btn-primary">Watch</button></a>
                 </div>
                 
@@ -72,7 +73,7 @@
               <p class="float-right">
                 <a href="#">Back to top</a>
               </p>
-              <p>P.s - i know Russian :3</p>
+              <p>Я люблю тебя малыш</p>
             </div>
           </footer>
 </body> 
